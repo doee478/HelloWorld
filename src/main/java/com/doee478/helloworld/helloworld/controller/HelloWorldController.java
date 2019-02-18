@@ -8,9 +8,14 @@ import org.springframework.web.bind.annotation.*;
 @EnableAutoConfiguration
 public class HelloWorldController {
 
-	@RequestMapping("/")
+	@RequestMapping("/home")
 	String home() {
-		return "Hello World!";
+		return "Home Page";
+	}
+
+	@RequestMapping("/landing")
+	String landing() {
+		return "Welcome to the website";
 	}
 
 	public static void main(String[] args) {
